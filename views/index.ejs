@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+      
+      html,body{
+      width: 100%;
+      height: 100%;
+      }
+      #main{
+        background-color:rgb(216, 232, 246);
+        margin-left: 160px;
+        width: 80%;
+        height: 90%;
+      }
+      #nav{
+        background-color: rgb(147, 215, 215);
+        width: 100%;
+        height: 60px;
+        position: relative;
+      }
+      #nav i{
+        font-size: 20px;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+      }
+      #nav-part1{
+        width: 50px;
+        height: 50px;
+        /* background-color: red; */
+        border-radius: 50%;
+        margin-left: 30px;
+        /* padding-top: 4px; */
+      }
+      #nav-part1 img{
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      }
+      #nav h2{
+        position: absolute;
+        font-size: 18px;
+        top: 10px;
+        left: 100px;
+      }
+      #nav h6{
+        position: absolute;
+        font-size: 12px;
+        top: 30px;
+        left: 100px;
+        color: rgb(240, 233, 233);
+      }
+      #nav-part2{
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 1px;
+        right: 100px;
+      }
+      #nav-part3{
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 1px;
+        right: 60px;
+      }
+      #nav-part4{
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 1px;
+        right: 20px;
+      }
+      #nav-part2 i{
+        font-size: 18px;
+        color: white;  
+      }
+      #nav-part3 i{
+        font-size: 18px;
+        color: white;  
+      }
+      #nav-part4 i{
+        font-size: 18px;
+        color: white;  
+      }
+      #today{
+        width: 70px;
+        height: 25px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 8px;
+        margin-top: 3px;
+        margin-left: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        background-color: rgb(182, 212, 242) ;
+      }
+      #leftmessage{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        text-align: center;
+        border-radius: 8px;
+       
+      }
+      #rightmessage{
+        /* width: 100px;
+        height: 30px; */
+       
+        background-color: rgba(251, 251, 4, 0.896);
+        
+        margin-left: 1020px;
+      
+        border-radius: 8px;
+      }
+      #rightmessage h5{
+        font-size: 25px;
+        text-align: center;
+        /* line-height: 20px; */
+      }
+      #leftmessage h5{
+        font-size: 25px;
+        text-align: center;
+        /* line-height: 20px; */
+      }
+      #text{
+        margin-top: 109px;
+        width: 96%;
+        height: 40px;
+        background-color: white;
+        border-radius: 3px;
+        margin-left: 2px;
+      }
+      input{
+        width: 85%;
+        height: 100%;
+        border: none;
+      }
+      button{
+        padding: 10px 35px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: none;
+        background-color: rgb(109, 109, 244);
+      }
+      #main-2{
+        width: 100%;
+        height: 300px;
+      }
+      #text i{
+        color: rgb(129, 124, 124);
+        font-size: 20px;
+      }
+      #audio{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 96, 128, 0.951);
+        position: absolute;
+        top: 545px;
+        right: 180px;
+        
+      }
+      #audio i{
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <body>
+    <div id="main">
+      <div id="nav">
+        <i class="ri-arrow-left-line"></i>
+        <div id="nav-part1">
+          <img src="/images/mubariz-mehdizadeh-Py8F6-hRn5o-unsplash.jpg" alt="">
+        </div>
+        <h2>Mohit Gupta</h2>
+        <h6>typing....</h6>
+        <div id="nav-part2">
+          <i  class="ri-phone-fill"></i>
+        </div>
+        <div id="nav-part3">
+          <i  class="ri-share-fill"></i>
+        </div>
+        <div id="nav-part4">
+          <i class="ri-more-2-fill"></i>
+        </div>
+      </div>
+      <div id="today">
+        <h3>today</h3>
+      </div>
+      <div id="main-2">
+    
+      </div>
+      <div id="text">
+        <i class="ri-emoji-sticker-line"></i>
+        <input type="text" placeholder="type a message" id="message">
+        <button>send</button>
+        <i class="ri-camera-fill"></i>
+      </div>
+      <div id="audio">
+        <i class="ri-mic-fill"></i>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        //      document.querySelector('button').addEventListener('click',(event)=>{
+        //   const inputfieldvalue =document.querySelector('#message').value;
+        // socket.emit('mohit',inputfieldvalue)
+
+        // })
+        const roomname=prompt('enter room name')
+        console.log(roomname)
+
+        socket.emit('join-room', roomname)
+
+        function sendMessage(){
+          const message=document.querySelector('input').value;
+          let template=`
+          <div id="rightmessage">
+        <h5>${message}</h5>
+      </div>`
+      document.querySelector('#main-2').innerHTML += template
+
+    socket.emit('mohit',{
+      message,
+      roomname
+    })
+      document.querySelector('input').value ="";
+    }
+    
+    
+        document.querySelector('button').addEventListener('click', sendMessage)
+
+function putIncomingMessage(message) {
+  let template = `<div id="leftmessage">
+        <h5>${message}</h5>
+      </div>
+  
+  `
+  document.querySelector('#main-2').innerHTML += template
+}
+
+socket.on('varun', msg => {
+  putIncomingMessage(msg)
+})
+   
+    </script>
+  </body>
+</html>
